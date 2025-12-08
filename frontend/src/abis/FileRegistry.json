@@ -1,0 +1,54 @@
+{
+  "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "abi": [
+    {
+      "type": "event",
+      "anonymous": false,
+      "name": "FileAdded",
+      "inputs": [
+        {
+          "type": "address",
+          "name": "owner",
+          "indexed": true
+        },
+        {
+          "type": "string",
+          "name": "cid",
+          "indexed": false
+        }
+      ]
+    },
+    {
+      "type": "function",
+      "name": "addFile",
+      "constant": false,
+      "payable": false,
+      "inputs": [
+        {
+          "type": "string",
+          "name": "cid"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "type": "function",
+      "name": "getFiles",
+      "constant": true,
+      "stateMutability": "view",
+      "payable": false,
+      "inputs": [
+        {
+          "type": "address",
+          "name": "owner"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "string[]",
+          "name": ""
+        }
+      ]
+    }
+  ]
+}
