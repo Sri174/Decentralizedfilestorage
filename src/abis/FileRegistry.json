@@ -1,0 +1,52 @@
+[
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "cid",
+        "type": "string"
+      }
+    ],
+    "name": "addFile",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "getFiles",
+    "outputs": [
+      {
+        "name": "",
+        "type": "string[]"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "cid",
+        "type": "string"
+      }
+    ],
+    "name": "FileAdded",
+    "type": "event"
+  }
+]
